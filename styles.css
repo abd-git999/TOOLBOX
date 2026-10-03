@@ -1,0 +1,144 @@
+body{
+    background-color: #f5f5f5;
+    color:#222;
+font-family:Arial,sans-serif;
+margin:0;
+}
+h1{
+    color:white;
+    font-size: 2em;
+    text-align:center;
+}
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    list-style:none;
+    padding:0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #aaa;
+}
+main{
+    padding:20px;
+    max-width:1100px;
+    margin:40px auto;
+}
+section{
+    background-color:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+footer{
+    background-color:#222;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+.tools {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+section a{
+    color:white;
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    background-color:#222;
+    padding:10px 16px;
+    border-radius:8px;
+}
+section a:hover{
+    background-color:#444;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+    .tools {
+        grid-template-columns: 1fr;
+    }
+}
+section h2{
+    margin-top:0;
+    font-size:24px;
+}
+.hero{
+    text-align:center;
+    padding: 40px 20px;
+    margin-bottom:30px;
+}
+.hero h2{
+    font-size:36px;
+    margin-bottom:10px;
+}
+.hero p{
+    font-size:18px;
+    color:#666;
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.calculator{
+    width:320px;
+    margin:30px auto;
+    background-color:#222;
+    border-radius:15px;
+    padding:20px;
+}
+.display{
+    background-color:#f5f5f5;
+    color:#222;
+    padding:20px;
+    border-radius:8px;
+    text-align:right;
+    font-size:32px;
+    margin-bottom:15px;
+}
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:10px;
+}
+.buttons button{
+    padding: 18px;
+    font-size: 20px;
+    border:none;
+    border-radius: 8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.buttons button:hover{
+    background-color: #ddd;
+}
+main h2{
+    text-align:center;
+    margin-bottom: 20px;
+    
+}
