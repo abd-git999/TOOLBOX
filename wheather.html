@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather - Toolbox</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌍 TOOLBOX</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="earthMap.html">Earth Map</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main class="weather-page">
+
+    <section class="weather-header">
+        <h2>🌤️ Weather</h2>
+        <p>Check the current weather conditions for your location.</p>
+    </section>
+
+
+    <section class="search-box">
+
+    <input 
+        type="text" 
+        id="cityInput" 
+        placeholder="Enter city name"
+    >
+
+    <button id="searchButton">
+        Search
+    </button>
+
+    <button id="locationButton">
+        📍 My Location
+    </button>
+
+</section>
+<p id="loading">⏳ Loading weather...</p>
+    <p id="errorMessage"> </p>
+    <section class="weather-card">
+
+       <div class="location">
+    <h3 id="cityName">Butajira</h3>
+    <p id="countryName">Ethiopia</p>
+    <p id="date">Today</p>
+</div>
+
+       <div class="temperature">
+    <div id="weatherIcon">⛅</div>
+    <span id="temperature">24°C</span>
+    <p id="condition">Partly Cloudy</p>
+</div>
+        <div class="weather-details">
+
+            <div>
+                <span>💧</span>
+                <p>Humidity</p>
+                <strong id="humidity">65%</strong>
+            </div>
+
+            <div>
+                <span>🌬️</span>
+                <p>Wind</p>
+                <strong id="wind">12 km/h</strong>
+            </div>
+
+            <div>
+                <span>🌡️</span>
+                <p>Feels Like</p>
+                <strong id="feelsLike">25°C</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 My Toolbox. All rights reserved.</p>
+    <p>Created by Developer Abdisa Siraj</p>
+</footer>
+<script src="weather.js"></script>
+</body>
+</html>
