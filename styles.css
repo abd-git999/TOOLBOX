@@ -397,7 +397,7 @@ margin-bottom:5px;
     background-color: #444;
 }
 #locationButton,
-#resetMapButton {
+#clearMarkerButton {
     padding: 12px 20px;
     margin: 5px;
     border: none;
@@ -408,13 +408,7 @@ margin-bottom:5px;
     cursor: pointer;
     
 }
-#mapSearchLoading {
-    display: none;
-    text-align: center;
-    margin: 10px 0;
-    color: #666;
-    font-size: 15px;
-}
+
 #locationButton:hover,
 #clearMarkerButton:hover,
 #resetMapButton:hover {
